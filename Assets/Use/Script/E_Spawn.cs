@@ -3,7 +3,7 @@ using System.Collections;
 
 public class E_Spawn : MonoBehaviour
 {
-    [SerializeField] GameObject[] E_obj; //出現刺せるエネミー配置
+    [SerializeField] GameObject[] E_obj; //出現させるエネミー配置
     [SerializeField] Transform spawnPoint; //出現地点
     [SerializeField, Tooltip("出現秒数の最小値")] float minTime;
     [SerializeField, Tooltip("出現秒数の最大値")] float maxTime;
