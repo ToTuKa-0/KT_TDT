@@ -1,9 +1,14 @@
 using UnityEngine;
 using System.Collections;
 
+/*
+ *エネミーの生成について
+ *特定の秒数の間でのランダム出現
+ */
+
 public class E_Spawn : MonoBehaviour
 {
-    [SerializeField] GameObject[] E_obj; //出現させるエネミー配置
+    [SerializeField] GameObject[] E_obj; //出現させるエネミー
     [SerializeField] Transform spawnPoint; //出現地点
     [SerializeField, Tooltip("出現秒数の最小値")] float minTime;
     [SerializeField, Tooltip("出現秒数の最大値")] float maxTime;
@@ -13,6 +18,7 @@ public class E_Spawn : MonoBehaviour
         StartCoroutine(Spawn());
     }
 
+    //出現システム
     IEnumerator Spawn()
     {
         while (true)
