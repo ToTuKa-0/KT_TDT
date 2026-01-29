@@ -32,7 +32,7 @@ public class CostDisplay : MonoBehaviour
     {
         if (text != null)
         {
-            text.text = "Cost: " + currentCost;
+            text.text = "Cost:" + currentCost;
         }
     }
 }
